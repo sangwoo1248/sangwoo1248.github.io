@@ -1,3 +1,6 @@
+layout: single
+title:  "python algorythm ch2"
+
 {
   "nbformat": 4,
   "nbformat_minor": 0,
