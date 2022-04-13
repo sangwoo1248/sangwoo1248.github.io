@@ -1,0 +1,59 @@
+1. 추가 요소 설명
+1) semantic 요소
+<header>: HTML 문서나 섹션(section) 부분에 대한 헤더(header)를 정의함.
+<nav>: HTML 문서 사이를 탐색할 수 있는 링크(link)의 집합을 정의함.
+<main>: HTML 문서의 주요 콘텐츠(content)를 정의함.
+<section>: HTML 문서에서 섹션(section) 부분을 정의함.
+<article>: HTML 문서에서 독립적인 하나의 기사(article) 부분을 정의함.
+<aside>: HTML 문서에서 페이지 부분 이외의 콘텐츠(content)를 정의함. 
+<figure>: HTML 문서에서 그래픽과 비디오 등의 독립적인 콘텐츠(content)를 정의함.
+<figcaption>: figure 요소를 위한 캡션을 정의함.
+<footer>: HTML 문서나 섹션(section) 부분에 대한 푸터(footer)를 정의함.
+<bdi>: 기본 출력방향과는 다른 방향으로 출력되는 텍스트를 정의함.
+<mark>: 하이라이팅된 텍스트를 정의함.
+<details>: 사용자가 보거나 숨길 수 있는 추가적인 설명문을 정의함.
+<summary>: details 요소에 나타날 내용을 정의함.
+<dialog>: 다이얼로그(dialog) 박스나 다이얼로그 윈도우를 정의함.
+<menuitem>: 사용자가 팝업 메뉴(popup menu)를 통해 선택할 수 있는 메뉴의 아이템(menu item)을 정의함.
+<meter>: 정해진 범위 내의 스칼라 치수를 정의함.
+<progress>: 작업에 대한 진행 정도를 정의함.
+<ruby>: 루비(ruby) 문자를 선언함.
+<rt>: 본문 위에 나타날 문자를 정의함.
+<rp>: 루비(ruby) 문자를 지원하지 않는 브라우저에서만 나타날 내용을 정의함.
+<time>: 날짜와 시간을 정의함.
+<wbr>: br 요소와는 달리 긴 단어가 화면의 맨 끝에 오면 상황에 따라 줄 바꿈 할 곳을 미리 정의함.
+2) input 요소
+<datalist>: input 요소에 대해 미리 정의된 옵션 리스트를 명시함.
+<keygen>: form 요소 안에 두 개의 키(key)를 만들어주는 생성기를 명시함.
+<output>: 스크립트 등으로 실행된 계산의 결과를 바로 나타냄.
+<number>: <input>태그의 type 속성값을 "number"로 설정하면, input 요소는 사용자가 숫자를 입력할 수 있도록 해줌
+<range>: <input>태그의 type 속성값을 "range"로 설정하면, input 요소는 사용자가 일정 범위 안의 값만을 입력할 수 있음
+<color>: <input>태그의 type 속성값을 "color"로 설정하면, input 요소는 사용자가 색상을 입력할 수 있음
+<date>: <input>태그의 type 속성값을 "date"로 설정하면, input 요소는 사용자가 날짜를 입력할 수 있음
+time: <input>태그의 type 속성값을 "time"로 설정하면, input 요소는 사용자가 시간을 입력할 수 있음
+<datetime-local>: <input>태그의 type 속성값을 "datetime-local"로 설정하면, input 요소는 사용자가 날짜와 시간을 입력할 수 있음
+<month>: <input>태그의 type 속성값을 "month"로 설정하면, input 요소는 사용자가 연도와 월을 입력할 수 있음
+<week>: <input>태그의 type 속성값을 "week"로 설정하면, input 요소는 사용자가 연도와 몇 번째 주인지를 입력
+<email>: <input>태그의 type 속성값을 "email"로 설정하면, input 요소는 사용자가 email 주소를 입력
+<url>: <input>태그의 type 속성값을 "url"로 설정하면, input 요소는 사용자가 URL 주소를 입력
+<tel>: <input>태그의 type 속성값을 "tel"로 설정하면, input 요소는 사용자가 전화번호를 입력
+<search>: <input>태그의 type 속성값을 "search"로 설정하면, input 요소는 사용자가 검색어를 입력
+3) input 요소의 속성
+autocomplete: 
+form 요소나 input 요소에 입력된 정보를 저장할지 안 할지를 명시 
+on으로 설정되면, 브라우저는 사용자가 입력하는 정보를 자동으로 저장
+text, password, range, color, date, datetime-local, month, week, email, url, tel, search 타입에서만 사용 가능
+novalidate:
+novalidate 속성은 input 요소의 속성이 아닌 form 요소의 속성
+입력한 정보(data)를 전송할 때 그 정보가 유효한지 아닌지를 검사하지 않았다는 것을 명시
+autofocus: 웹 페이지가 로드(load)될 때, 속성이 적용된 input 요소에 자동으로 포커스(focus)가 가도록 해줌
+form: 해당 input 요소의 위치에 상관없이 포함될 form 요소를 명시
+formaction: 입력한 정보(data)를 전송할 때 정보가 전달될 서버 측 파일을 명시, 입력된 정보를 넘겨줄 서버 측 파일을 input 요소에서 바꿀 수 있게 됨
+formenctype: 입력한 정보(data)를 전송할 때 암호화하는 방법을 명시, submit 타입과 image 타입에서만 사용할 수 있음
+formmethod: 입력한 정보(data)를 전송할 때 사용하는 http 메소드(method)를 명시, submit 타입과 image 타입에서만 사용할 수 있음
+formnovalidate: 입력한 정보(data)를 전송할 때 그 정보가 유효한지 아닌지를 검사하지 않았다는 것을 명시, submit 타입에서만 사용할 수 있음
+formtarget: 입력한 정보(data)를 전송한 후, 그 결과로 받은 응답 페이지를 어디에 출력할지를 명시, ubmit 타입과 image 타입에서만 사용 수 있음
+pattern: input 요소에 입력된 값을 검사하기 위한 정규 표현식(regular expression)을 명시, text, password, email, tel, url 타입에서만 사용 가능
+placeholder: input 요소에 입력되어야 할 값에 대한 힌트를 제공, text, password, email, tel, url, search 타입에서만 사용 가능
+required: 반드시 입력되어야 할 필수 input 요소를 명시
+step: input 요소에 입력할 수 있도록 허용된 숫자 간격을 명시, number, range, date, time, datetime-local, month, week 타입에서만 사용 가능
